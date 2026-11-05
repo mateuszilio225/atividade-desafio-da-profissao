@@ -1,41 +1,28 @@
 # Publicação do CyberSafe
 
+**Situação atual: publicado no GitHub Pages.**
+
+- Site: https://mateuszilio225.github.io/atividade-desafio-da-profissao/
 - Repositório: https://github.com/mateuszilio225/atividade-desafio-da-profissao
-- Destino configurado no QR e no link do folder: https://mateuszilio225.github.io/atividade-desafio-da-profissao/
-- Página de entrada: `index.html`.
-- Folder atualizado: `folder.html` e `folder-cybersafe.pdf`.
-- Workflow: `.github/workflows/pages.yml`, com actions oficiais de configuração, upload e implantação no GitHub Pages.
+- Commit da aplicação implantada: `edf9e8d` — correção do semestre para **2026/2**.
+- Execução concluída com **Success**, em 21 segundos: https://github.com/mateuszilio225/atividade-desafio-da-profissao/actions/runs/42132599185
+- A etapa de implantação informou o endereço acima e gerou o artefato `github-pages`.
+- Página de entrada: `index.html`; folder atualizado: `folder.html` e `folder-cybersafe.pdf`.
 
-## Resultado observado
+## Correções aplicadas
 
-**Envio ao GitHub concluído.** O primeiro commit `e17682e7e9021ea687008f56092e8bbd7f9735f3` foi enviado com sucesso para `refs/heads/main` e confirmado por `git ls-remote`. A página pública do repositório respondeu HTTP 200. O usuário autorizou o envio e a implantação.
+O semestre foi alterado para **2026/2** em cabeçalho, ficha acadêmica, créditos, rodapé, duas faces do folder, PDF e documentos. O PDF foi reexportado; a leitura do QR continua retornando o endereço do próprio projeto.
 
-**Publicação no Pages bloqueada na ativação inicial.** O workflow foi realmente executado e falhou na etapa `Configurar GitHub Pages`: `Resource not accessible by integration`, ao criar o site Pages. O token automático de Actions não tem os privilégios necessários para essa ativação inicial. O Pages ainda não está confirmado como publicado.
+A execução anterior falhou ao ativar o Pages (`Resource not accessible by integration`), explicando o erro “There isn't a GitHub Pages site here” mostrado pelo usuário. Na nova execução, a publicação foi concluída com sucesso. Não há mais bloqueio de ativação observado na implantação atual.
 
-Execução verificada: https://github.com/mateuszilio225/atividade-desafio-da-profissao/actions/runs/42131599179
+## Validação e limites
 
-Para desbloquear:
+O site e o folder foram conferidos em Chromium local; as cinco larguras não apresentaram overflow. O texto extraído do PDF confirmou quatro identificações com 2026/2 e nenhuma com o semestre antigo. QR e link clicável do PDF apontam para o projeto.
 
-1. O proprietário abre https://github.com/mateuszilio225/atividade-desafio-da-profissao/settings/pages e seleciona **GitHub Actions** em **Build and deployment → Source**.
-2. Em **Actions**, abre a execução acima e escolhe **Re-run all jobs**. O workflow existente publica os arquivos; não é necessário recriar o projeto ou gerar outro QR.
-3. Depois do sucesso, confirma o acesso a https://mateuszilio225.github.io/atividade-desafio-da-profissao/ em uma janela anônima e no celular.
+A publicação remota foi confirmada pela página pública de Actions e pelo resultado da etapa de implantação. A tentativa de obter o HTML diretamente pelo domínio `mateuszilio225.github.io` ainda foi bloqueada pelo proxy deste ambiente (CONNECT 403); não se afirma HTTP 200 verificado por esta instância. Esse bloqueio de rede local é distinto do 404 anterior do Pages.
 
-A preparação local foi concluída: QR do PNG e do PDF lidos com sucesso, link clicável correto, nomes/créditos/logos conferidos e duas páginas A5 sem cortes. A indisponibilidade da API no ambiente e a falta de privilégio do token automático são bloqueios distintos; nenhum deles é atribuído a erro no HTML.
+As adições `api.github.com` e `mateuszilio225.github.io` continuam salvas no rascunho da configuração do ambiente; para aplicá-las, é necessário revisar, salvar e publicar essa configuração. Isso é separado da publicação do site, que já foi concluída no GitHub.
 
-## Restrição de rede observada
+O workflow `.github/workflows/pages.yml` mantém a publicação automática a cada push em `main`. Não há build da aplicação ou backend.
 
-O proxy deste ambiente recusou o CONNECT para `api.github.com` e `mateuszilio225.github.io` com HTTP 403. Isso impede consultar a API, ativar/inspecionar o Pages diretamente e verificar o site por HTTPS nesta instância. Não é evidência de senha incorreta ou de HTTP 403 retornado pelo site.
-
-Foram salvas no rascunho da configuração do ambiente as adições mínimas `api.github.com` e `mateuszilio225.github.io`, preservando os presets existentes. O salvamento foi confirmado e retornou `requires_publish: true`. Para aplicar essa mudança, revise e salve nas configurações do ambiente e publique a configuração. Isso é separado da implantação do site no GitHub Pages.
-
-## Acompanhar o GitHub Pages
-
-Veja **Actions → Publicar CyberSafe no GitHub Pages**. O workflow tenta habilitar o Pages automaticamente. Se o GitHub negar essa configuração por privilégios do token de Actions, o proprietário deve selecionar **Settings → Pages → Source → GitHub Actions** e executar novamente o workflow. Depois de concluir, confira a URL de implantação e teste em janela anônima/rede móvel antes de divulgar o folder.
-
-Não há postagem automática em redes sociais nem entrega acadêmica automática.
-
-## Atualização de semestre e erro 404
-
-O usuário confirmou que o semestre correto é **2026/2**. Site, documentos e PDF foram atualizados e verificados localmente. A mensagem “There isn't a GitHub Pages site here” corresponde à ausência de publicação ativa, coerente com a falha de criação do Pages observada na execução acima. Alterar a data no HTML não ativa o serviço de hospedagem.
-
-A API do GitHub foi consultada novamente durante essa correção e continuou bloqueada pelo proxy do ambiente. Nenhum novo token foi solicitado e nenhuma credencial foi exposta. O proprietário precisa definir a fonte em Settings → Pages → GitHub Actions; depois, a execução do workflow publica os arquivos atualizados.
+Não foi realizada postagem em redes sociais nem entrega acadêmica automática. Testes físicos em celular e impressão continuam sob revisão da dupla.
