@@ -27,7 +27,7 @@ Resultado da execução final: **23 verificações aprovadas e 1 bloqueada**, se
 | 17 | Textos acadêmicos | **Aprovado.** Conferidos instituição, curso, disciplina, docente, semestre 2026/01, tema e os nomes reais da dupla. Redação exata do pedido original no rodapé do site e na face A do folder; redação do PDF na seção acadêmica e na face B. Título e subtítulo obrigatórios presentes. |
 | 18 | Fontes com links válidos | **Parcial.** Há três links HTTPS para os domínios oficiais de CERT.br, NIST e ANPD. A consulta remota foi **bloqueada pelo proxy (CONNECT 403)**; não se afirma que responderam HTTP 200. Abrir os links em rede permitida antes da entrega. A documentação do Tailwind também foi bloqueada, embora o arquivo do CDN tenha carregado normalmente. |
 | 19 | Integridade do conteúdo | **Revisão editorial realizada.** Sem estatísticas, pesquisas, resultados, logos ou autorizações fabricados. Exemplos de golpes estão identificados como fictícios. Objetivos PBL são apresentados como esperados, sem pesquisa com participantes. Não há garantia de proteção ou recuperação financeira. |
-| 20 | GitHub Pages sem backend | **Estrutura compatível.** Toda a aplicação está no `index.html`, sem build ou serviço de aplicação. O fluxo HTTP estático foi validado; **a implantação no GitHub Pages ainda não foi executada**, e não há URL pública ou QR Code real nesta entrega. |
+| 20 | GitHub Pages sem backend | **Código enviado ao GitHub.** Aplicação estática, folder com QR e link do projeto validados. Workflow de implantação executado, mas falhou ao ativar Pages com `Resource not accessible by integration`. O proprietário precisa selecionar GitHub Actions em Settings → Pages e reexecutar. Não se declara o site publicado; detalhes em `PUBLICACAO.md`. |
 
 ## Auditoria automática de acessibilidade
 
@@ -48,7 +48,7 @@ HTML semântico, um H1, `lang="pt-BR"`, labels, foco visível, mensagens textuai
 - Foram usados eventos reais de teclado em navegador automatizado, não testes com participantes ou leitores de tela.
 - Além do roteiro, foram produzidos `folder.html` e a prova `folder-cybersafe.pdf`, com **duas páginas A5**, sem conteúdo excedente na validação de impressão do Chromium. QR e link do projeto estão aplicados e validados; a disponibilidade remota deve ser confirmada após a implantação. O PDF exportado não tem marcação semântica (tagged PDF); a versão HTML e o roteiro textual são as alternativas de leitura. A acessibilidade do PDF deve ser trabalhada antes de utilizá-lo como único meio digital.
 - A logo ATITUS original mede 140 × 48 px: atende à exibição web utilizada, mas ampliações impressas exigem prova e, preferencialmente, arquivo vetorial/de maior resolução. Não foi inventada uma nova versão da marca.
-- O repositório foi consultado novamente e não anunciou refs/commits remotos. O endereço padrão de GitHub Pages não pôde ser confirmado: o proxy bloqueou a consulta com CONNECT 403. Após o usuário solicitar a publicação, o QR foi gerado para o endereço padrão do Pages do repositório e a publicação automática foi configurada. A conclusão remota não foi presumida; veja `PUBLICACAO.md`.
+- O repositório inicialmente estava vazio. O código foi posteriormente enviado e `main` confirmado por Git; a página do repositório respondeu HTTP 200. O acesso direto ao domínio do Pages pelo ambiente não pôde ser confirmado: o proxy bloqueou a consulta com CONNECT 403. Após o usuário solicitar a publicação, o QR foi gerado para o endereço padrão do Pages do repositório e a publicação automática foi configurada. A conclusão remota não foi presumida; veja `PUBLICACAO.md`.
 - O ambiente não permitiu a abertura direta `file://` nem a conferência HTTP das referências oficiais. Essas limitações foram preservadas, sem contornar a política.
 
 ## Revisão manual pendente
@@ -78,3 +78,5 @@ O PDF de regras foi relido integralmente. Foram conferidos novamente: dupla, dic
 - Anotações de link do PDF conferidas com `pdfinfo -url`: QR e URL escrita apontam para o projeto; a referência CERT.br permanece separada.
 - Folder novamente verificado nas cinco larguras sem overflow, impressão A5 de duas páginas sem cortes e sem erros de JavaScript.
 - A publicação no GitHub Pages foi solicitada e recebeu workflow próprio. A situação remota está em `PUBLICACAO.md`; um QR legível não comprova que a implantação terminou.
+
+O primeiro workflow remoto foi acompanhado pela página pública do GitHub e suas anotações: falha de ativação do Pages por `Resource not accessible by integration`. Esse é um resultado remoto efetivamente observado, separado dos testes locais aprovados. O push não equivale a publicação concluída.

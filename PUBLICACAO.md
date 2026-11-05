@@ -6,7 +6,21 @@
 - Folder atualizado: `folder.html` e `folder-cybersafe.pdf`.
 - Workflow: `.github/workflows/pages.yml`, com actions oficiais de configuração, upload e implantação no GitHub Pages.
 
-O usuário autorizou o envio ao repositório e a publicação no Pages. A preparação local foi concluída, incluindo a leitura do QR diretamente do PDF e a presença do link clicável correto. A conclusão do envio e da implantação deve ser registrada abaixo após observar o resultado real.
+## Resultado observado
+
+**Envio ao GitHub concluído.** O primeiro commit `e17682e7e9021ea687008f56092e8bbd7f9735f3` foi enviado com sucesso para `refs/heads/main` e confirmado por `git ls-remote`. A página pública do repositório respondeu HTTP 200. O usuário autorizou o envio e a implantação.
+
+**Publicação no Pages bloqueada na ativação inicial.** O workflow foi realmente executado e falhou na etapa `Configurar GitHub Pages`: `Resource not accessible by integration`, ao criar o site Pages. O token automático de Actions não tem os privilégios necessários para essa ativação inicial. O Pages ainda não está confirmado como publicado.
+
+Execução verificada: https://github.com/mateuszilio225/atividade-desafio-da-profissao/actions/runs/42131599179
+
+Para desbloquear:
+
+1. O proprietário abre https://github.com/mateuszilio225/atividade-desafio-da-profissao/settings/pages e seleciona **GitHub Actions** em **Build and deployment → Source**.
+2. Em **Actions**, abre a execução acima e escolhe **Re-run all jobs**. O workflow existente publica os arquivos; não é necessário recriar o projeto ou gerar outro QR.
+3. Depois do sucesso, confirma o acesso a https://mateuszilio225.github.io/atividade-desafio-da-profissao/ em uma janela anônima e no celular.
+
+A preparação local foi concluída: QR do PNG e do PDF lidos com sucesso, link clicável correto, nomes/créditos/logos conferidos e duas páginas A5 sem cortes. A indisponibilidade da API no ambiente e a falta de privilégio do token automático são bloqueios distintos; nenhum deles é atribuído a erro no HTML.
 
 ## Restrição de rede observada
 
