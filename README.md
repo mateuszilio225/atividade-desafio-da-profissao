@@ -1,8 +1,8 @@
 # CyberSafe — Sua segurança começa com conhecimento
 
-Landing page educativa sobre Ética Hacker e Higiene Digital. Projeto acadêmico da ATITUS EDUCAÇÃO, curso de Ciência da Computação, disciplina Desafio da Profissão, docente Prof. Dr. Suellen Spinello Sotille, semestre 2026/01.
+Landing page educativa sobre Ética Hacker e Higiene Digital. Projeto acadêmico da ATITUS EDUCAÇÃO, curso de Ciência da Computação, disciplina Desafio da Profissão, docente Prof. Dr. Suellen Spinello Sotille, semestre 2026/2.
 
-> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/01
+> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/2
 
 Integrantes: Mateus Zilio e Yuri Antonini. A identidade CyberSafe não é uma marca institucional oficial.
 
@@ -66,7 +66,7 @@ O link escrito e o clicável no PDF apontam para o mesmo endereço do QR. Se o e
 
 ## Antes da entrega acadêmica
 
-Os nomes **Mateus Zilio** e **Yuri Antonini** estão aplicados na página, no folder e nos créditos dos documentos. As logos foram extraídas do PowerPoint enviado, sem redesenho; veja `assets/ORIGEM.md`. O curso usa o mesmo enquadramento do slide, sem exibir a antiga marca IMED presente à direita da imagem completa. O semestre permanece **2026/01**. A identificação literal do PDF aparece na seção acadêmica e na face B do folder; a redação exata do prompt anterior foi preservada no rodapé do site e na face A.
+Os nomes **Mateus Zilio** e **Yuri Antonini** estão aplicados na página, no folder e nos créditos dos documentos. As logos foram extraídas do PowerPoint enviado, sem redesenho; veja `assets/ORIGEM.md`. O curso usa o mesmo enquadramento do slide, sem exibir a antiga marca IMED presente à direita da imagem completa. O semestre foi corrigido para **2026/2**, conforme a atualização do usuário, em todo o site, folder e documentos. A identificação baseada no PDF, com o semestre corrigido pelo usuário, aparece na seção acadêmica e na face B do folder; a redação do prompt anterior também foi atualizada para 2026/2 no rodapé do site e na face A.
 
 O PDF prevê **19/11**, sem ano especificado, para finalizar, apresentar, postar nas redes sociais e entregar. Isso é uma etapa acadêmica prevista, não uma afirmação de entrega/publicação. Consulte `REQUISITOS-PDF.md` para a correspondência entre regras e implementação.
 

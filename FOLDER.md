@@ -90,7 +90,7 @@ Use em ambas as faces, em uma faixa inferior com contraste e leitura confortáve
 
 > ATITUS EDUCAÇÃO — Ciência da Computação
 >
-> Desafio da Profissão — Semestre 2026/01
+> Desafio da Profissão — Semestre 2026/2
 >
 > Prof. Dr. Suellen S. Sotille
 >
@@ -98,11 +98,11 @@ Use em ambas as faces, em uma faixa inferior com contraste e leitura confortáve
 
 Na face A, acrescente também a identificação exata solicitada no prompt original:
 
-> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/01
+> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/2
 
 Na face B, inclua a redação transcrita do PDF de regras:
 
-> Projeto acadêmico da disciplina de Desafio da Profissão/ Prof. Suellen S. Sotille – Semestre 2026/01
+> Projeto acadêmico da disciplina de Desafio da Profissão/ Prof. Suellen S. Sotille – Semestre 2026/2
 
 Assim são preservadas as duas redações solicitadas, sem substituir o texto obrigatório anterior.
 
@@ -123,4 +123,4 @@ Antes de divulgar, confirme a publicação e teste em celular/prova impressa. Li
 
 ## Entrega prevista no PDF
 
-O enunciado estabelece atividade em dupla e informa **19/11** para finalizar, apresentar, postar nas redes sociais e entregar. O documento não especifica o ano dessa data; o semestre acadêmico é mantido como **2026/01**. Prepare uma legenda para a postagem com a dica, a URL real e os nomes da dupla; faça a publicação somente depois de revisar o folder final. Nenhuma postagem foi realizada por este projeto.
+O enunciado estabelece atividade em dupla e informa **19/11** para finalizar, apresentar, postar nas redes sociais e entregar. O documento não especifica o ano dessa data; o semestre acadêmico foi corrigido para **2026/2** a pedido do usuário. Prepare uma legenda para a postagem com a dica, a URL real e os nomes da dupla; faça a publicação somente depois de revisar o folder final. Nenhuma postagem foi realizada por este projeto.

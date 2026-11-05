@@ -24,7 +24,7 @@ Resultado da execução final: **23 verificações aprovadas e 1 bloqueada**, se
 | 14 | Teclado e acessibilidade | **Aprovados os fluxos exercitados:** link para pular, menu, Escape, expansões, quiz, foco entre perguntas, checkbox, campo e botões de senha. Movimento reduzido confirmado com `scroll-behavior: auto`. Auditoria automática detalhada abaixo; teste com leitores de tela permanece pendente. |
 | 15 | Erros JavaScript | **Aprovado.** Zero exceções `pageerror`, zero `console.error` e zero requisições de recursos com falha na página principal. |
 | 16 | Logos e integrantes | **Aprovado.** Logos fornecidas aplicadas no cabeçalho, na seção acadêmica, no rodapé e nas duas faces do folder. PNGs embutidos idênticos aos extraídos do PowerPoint. Enquadramento do curso reproduzido do slide, sem IMED no layout. Mateus Zilio e Yuri Antonini substituem os nomes reservados. |
-| 17 | Textos acadêmicos | **Aprovado.** Conferidos instituição, curso, disciplina, docente, semestre 2026/01, tema e os nomes reais da dupla. Redação exata do pedido original no rodapé do site e na face A do folder; redação do PDF na seção acadêmica e na face B. Título e subtítulo obrigatórios presentes. |
+| 17 | Textos acadêmicos | **Aprovado.** Conferidos instituição, curso, disciplina, docente, semestre 2026/2, tema e os nomes reais da dupla. Identificações do pedido original e do PDF preservadas nos respectivos locais, com o semestre atualizado para 2026/2 a pedido do usuário. Título e subtítulo obrigatórios presentes. |
 | 18 | Fontes com links válidos | **Parcial.** Há três links HTTPS para os domínios oficiais de CERT.br, NIST e ANPD. A consulta remota foi **bloqueada pelo proxy (CONNECT 403)**; não se afirma que responderam HTTP 200. Abrir os links em rede permitida antes da entrega. A documentação do Tailwind também foi bloqueada, embora o arquivo do CDN tenha carregado normalmente. |
 | 19 | Integridade do conteúdo | **Revisão editorial realizada.** Sem estatísticas, pesquisas, resultados, logos ou autorizações fabricados. Exemplos de golpes estão identificados como fictícios. Objetivos PBL são apresentados como esperados, sem pesquisa com participantes. Não há garantia de proteção ou recuperação financeira. |
 | 20 | GitHub Pages sem backend | **Código enviado ao GitHub.** Aplicação estática, folder com QR e link do projeto validados. Workflow de implantação executado, mas falhou ao ativar Pages com `Resource not accessible by integration`. O proprietário precisa selecionar GitHub Actions em Settings → Pages e reexecutar. Não se declara o site publicado; detalhes em `PUBLICACAO.md`. |
@@ -80,3 +80,11 @@ O PDF de regras foi relido integralmente. Foram conferidos novamente: dupla, dic
 - A publicação no GitHub Pages foi solicitada e recebeu workflow próprio. A situação remota está em `PUBLICACAO.md`; um QR legível não comprova que a implantação terminou.
 
 O primeiro workflow remoto foi acompanhado pela página pública do GitHub e suas anotações: falha de ativação do Pages por `Resource not accessible by integration`. Esse é um resultado remoto efetivamente observado, separado dos testes locais aprovados. O push não equivale a publicação concluída.
+
+## Correção de semestre solicitada pelo usuário
+
+O semestre foi alterado para **2026/2** em todas as ocorrências do site, folder, PDF exportado e documentos. Esta instrução posterior substitui a indicação do primeiro semestre no enunciado anterior.
+
+Verificações executadas em Chromium: cabeçalho, ficha acadêmica, identificação e rodapé contêm 2026/2; nenhuma ocorrência antiga no conteúdo da página; cinco larguras sem overflow. PDF reexportado em duas faces, com quatro ocorrências de 2026/2 e sem cortes. O QR foi novamente decodificado diretamente da página renderizada do PDF e manteve a URL do projeto.
+
+O 404 mostrado pelo usuário é compatível com o bloqueio de ativação do Pages já diagnosticado: `Resource not accessible by integration` ao criar o site. A aplicação local funciona; a ativação do serviço requer a configuração de fonte no repositório pelo proprietário.

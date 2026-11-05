@@ -17,17 +17,17 @@ As regras abaixo são requisitos acadêmicos trazidos pelo usuário. A indicaç�
 | 8 | Dia 19/11: finalizar, apresentar, postar e entregar | Registrado na seção acadêmica e nos guias. O PDF não especifica ano; não foi inventado. A etapa não é apresentada como concluída. |
 | 9 | Logo ATITUS no folder e site | Arte branca original extraída do PowerPoint e embutida nos dois HTMLs, sobre fundo marinho. |
 | 9 | Logo do curso no folder e site | Arte fornecida, com o enquadramento do curso utilizado no slide e no exemplo do PDF; sem acrescentar a marca antiga IMED ao layout. Proveniência em `assets/ORIGEM.md`. |
-| 9 | Identificação acadêmica | Redação transcrita do PDF aplicada na seção acadêmica do site e na face B do folder. Redação exata do prompt anterior preservada no rodapé do site e na face A do folder. |
+| 9 | Identificação acadêmica | Identificação do PDF aplicada na seção acadêmica e na face B, com semestre corrigido para 2026/2 a pedido do usuário. A identificação do pedido anterior também foi atualizada no rodapé do site e na face A. |
 | 9 | Nome dos integrantes | Mateus Zilio e Yuri Antonini aparecem no site, no folder e nos guias. Sem placeholders de nomes/logos no layout. |
 
 ## Textos de identificação preservados
 
-Do PDF:
+Identificação acadêmica adaptada ao semestre **2026/2**, conforme a correção posterior do usuário (o PDF fornecido indicava o primeiro semestre):
 
-> Projeto acadêmico da disciplina de Desafio da Profissão/ Prof. Suellen S. Sotille – Semestre 2026/01
+> Projeto acadêmico da disciplina de Desafio da Profissão/ Prof. Suellen S. Sotille – Semestre 2026/2
 
-Do pedido original:
+Identificação do pedido original, também atualizada para **2026/2**:
 
-> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/01
+> Projeto acadêmico da disciplina de Desafio da Profissão / Prof. Dr. Suellen S. Sotille - Semestre 2026/2
 
 O PDF não exige frameworks, coleta de dados ou publicação automática. Foram mantidas as restrições técnicas e de privacidade do pedido original, que complementam o enunciado. QR e link do projeto já estão implementados e conferidos. Para considerar a entrega pronta para divulgação, confirme também a conclusão da implantação no GitHub Pages e o acesso externo, além da revisão em celular/prova impressa. A publicação em redes sociais e a apresentação/entrega acadêmica são etapas da dupla, não foram realizadas automaticamente.

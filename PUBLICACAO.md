@@ -33,3 +33,9 @@ Foram salvas no rascunho da configuração do ambiente as adições mínimas `ap
 Veja **Actions → Publicar CyberSafe no GitHub Pages**. O workflow tenta habilitar o Pages automaticamente. Se o GitHub negar essa configuração por privilégios do token de Actions, o proprietário deve selecionar **Settings → Pages → Source → GitHub Actions** e executar novamente o workflow. Depois de concluir, confira a URL de implantação e teste em janela anônima/rede móvel antes de divulgar o folder.
 
 Não há postagem automática em redes sociais nem entrega acadêmica automática.
+
+## Atualização de semestre e erro 404
+
+O usuário confirmou que o semestre correto é **2026/2**. Site, documentos e PDF foram atualizados e verificados localmente. A mensagem “There isn't a GitHub Pages site here” corresponde à ausência de publicação ativa, coerente com a falha de criação do Pages observada na execução acima. Alterar a data no HTML não ativa o serviço de hospedagem.
+
+A API do GitHub foi consultada novamente durante essa correção e continuou bloqueada pelo proxy do ambiente. Nenhum novo token foi solicitado e nenhuma credencial foi exposta. O proprietário precisa definir a fonte em Settings → Pages → GitHub Actions; depois, a execução do workflow publica os arquivos atualizados.
