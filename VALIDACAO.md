@@ -54,3 +54,7 @@ Tailwind Play CDN é recomendado para desenvolvimento. O PDF exportado não tem 
 2. Conferir o site publicado em navegadores e dispositivos reais; testar leitores de tela, zoom de 200%/400% e preferências de fonte/contraste. Auditoria automática não equivale a certificação WCAG.
 3. Abrir as referências em rede permitida e testar os compartilhamentos reais por escolha do usuário.
 4. Ao postar o PNG, incluir link clicável na legenda e descrição textual; não depender só de imagem ou QR. Nenhuma postagem social ou entrega acadêmica foi realizada automaticamente.
+
+## Publicação da versão de uma página
+
+Confirmada pelo GitHub Actions: execução https://github.com/mateuszilio225/atividade-desafio-da-profissao/actions/runs/42134144481, status **Success**, duração de 19 segundos, commit bb92062. O artefato publicado inclui o folder HTML, o PDF de uma página e a imagem PNG. O link do site foi atualizado para abrir explicitamente a versão de uma página.
