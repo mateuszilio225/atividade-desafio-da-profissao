@@ -26,3 +26,7 @@ As adições `api.github.com` e `mateuszilio225.github.io` continuam salvas no r
 O workflow `.github/workflows/pages.yml` mantém a publicação automática a cada push em `main`. Não há build da aplicação ou backend.
 
 Não foi realizada postagem em redes sociais nem entrega acadêmica automática. Testes físicos em celular e impressão continuam sob revisão da dupla.
+
+## Atualização do folder para uma página
+
+O usuário solicitou uma única página, somente frente, com QR visível e chamada mais atrativa. Foram atualizados o HTML, o PDF A5 de **uma página** e o PNG de divulgação. QR, link escrito e botão clicável foram verificados, inclusive com leitura do QR diretamente da única página exportada. O workflow também inclui a imagem PNG no artefato publicado. A execução desta atualização deve ser confirmada após o push; o sucesso anterior citado acima corresponde à versão anterior do folder.

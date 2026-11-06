@@ -9,7 +9,7 @@ Integrantes: Mateus Zilio e Yuri Antonini. A identidade CyberSafe não é uma ma
 ## Entregas
 
 1. `index.html`: aplicação completa, HTML5 semântico, Tailwind CSS via CDN, CSS complementar e JavaScript Vanilla inline.
-2. `FOLDER.md`: texto integral e roteiro de diagramação; `folder.html`: folder diagramado de duas faces; `folder-cybersafe.pdf`: PDF A5 de duas páginas, com logos, integrantes e QR/link para a página CyberSafe. Confirme a implantação antes de divulgar.
+2. `FOLDER.md`: texto integral e roteiro de diagramação; `folder.html`: folder diagramado de uma única página/face; `folder-cybersafe.pdf`: PDF A5 de uma página, com QR na frente, chamada para o desafio, logos e integrantes. `folder-cybersafe.png` é a versão em imagem para divulgação. Confirme a implantação antes de divulgar.
 3. Este guia: execução, privacidade, manutenção e publicação no GitHub Pages.
 4. `VALIDACAO.md`: verificações realizadas, evidências e testes manuais pendentes.
 
@@ -40,13 +40,13 @@ O repositório indicado para este projeto é `mateuszilio225/atividade-desafio-d
 
 ### 2. Adicionar os arquivos
 
-Na raiz, use **Add file → Upload files** para enviar `index.html`, `folder.html`, `FOLDER.md`, `README.md`, `VALIDACAO.md`, `REQUISITOS-PDF.md`, `folder-cybersafe.pdf` e a pasta `assets/`. As logos da página e do folder também estão embutidas nos respectivos HTMLs, sem dependência dessa pasta para exibição. Confira os arquivos e faça o commit em `main`. No repositório inicialmente vazio, esse commit pode ser o primeiro a criar a branch. Se o repositório usar outra branch, selecione-a na etapa seguinte. Também é possível usar Git normalmente; não é necessário fazer build.
+Na raiz, use **Add file → Upload files** para enviar `index.html`, `folder.html`, `FOLDER.md`, `README.md`, `VALIDACAO.md`, `REQUISITOS-PDF.md`, `folder-cybersafe.pdf`, `folder-cybersafe.png` e a pasta `assets/`. As logos da página e do folder também estão embutidas nos respectivos HTMLs, sem dependência dessa pasta para exibição. Confira os arquivos e faça o commit em `main`. No repositório inicialmente vazio, esse commit pode ser o primeiro a criar a branch. Se o repositório usar outra branch, selecione-a na etapa seguinte. Também é possível usar Git normalmente; não é necessário fazer build.
 
 Mantenha o nome `index.html` em minúsculas, na raiz da branch escolhida. Os documentos são apoio; a aplicação principal continua inteiramente no HTML.
 
 ### 3. Publicação automática
 
-O arquivo `.github/workflows/pages.yml` publica os arquivos estáticos com as actions oficiais do GitHub Pages a cada push em `main`. Não há instalação ou build da aplicação. O workflow prepara apenas `index.html`, `folder.html` e `folder-cybersafe.pdf`; as imagens estão embutidas nos HTMLs.
+O arquivo `.github/workflows/pages.yml` publica os arquivos estáticos com as actions oficiais do GitHub Pages a cada push em `main`. Não há instalação ou build da aplicação. O workflow prepara apenas `index.html`, `folder.html`, `folder-cybersafe.pdf` e `folder-cybersafe.png`; as imagens estão embutidas nos HTMLs.
 
 A action `configure-pages` está configurada para tentar habilitar o Pages. Se o GitHub negar a habilitação automática por falta de privilégios do `GITHUB_TOKEN`, o proprietário deve escolher **Settings → Pages → Source → GitHub Actions** e executar novamente o workflow. Isso é uma configuração do repositório, não uma dependência da aplicação.
 
@@ -66,7 +66,7 @@ O link escrito e o clicável no PDF apontam para o mesmo endereço do QR. Se o e
 
 ## Antes da entrega acadêmica
 
-Os nomes **Mateus Zilio** e **Yuri Antonini** estão aplicados na página, no folder e nos créditos dos documentos. As logos foram extraídas do PowerPoint enviado, sem redesenho; veja `assets/ORIGEM.md`. O curso usa o mesmo enquadramento do slide, sem exibir a antiga marca IMED presente à direita da imagem completa. O semestre foi corrigido para **2026/2**, conforme a atualização do usuário, em todo o site, folder e documentos. A identificação baseada no PDF, com o semestre corrigido pelo usuário, aparece na seção acadêmica e na face B do folder; a redação do prompt anterior também foi atualizada para 2026/2 no rodapé do site e na face A.
+Os nomes **Mateus Zilio** e **Yuri Antonini** estão aplicados na página, no folder e nos créditos dos documentos. As logos foram extraídas do PowerPoint enviado, sem redesenho; veja `assets/ORIGEM.md`. O curso usa o mesmo enquadramento do slide, sem exibir a antiga marca IMED presente à direita da imagem completa. O semestre foi corrigido para **2026/2**, conforme a atualização do usuário, em todo o site, folder e documentos. A identificação baseada no PDF, com o semestre corrigido pelo usuário, aparece na seção acadêmica do site. O folder agora usa uma única identificação completa na mesma face do QR, e a redação do prompt anterior foi atualizada para 2026/2 no rodapé do site e no folder.
 
 O PDF prevê **19/11**, sem ano especificado, para finalizar, apresentar, postar nas redes sociais e entregar. Isso é uma etapa acadêmica prevista, não uma afirmação de entrega/publicação. Consulte `REQUISITOS-PDF.md` para a correspondência entre regras e implementação.
 

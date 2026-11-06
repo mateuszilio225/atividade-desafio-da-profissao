@@ -30,7 +30,7 @@ jobs:
       - name: Preparar arquivos estáticos
         run: |
           mkdir -p _site
-          cp index.html folder.html folder-cybersafe.pdf _site/
+          cp index.html folder.html folder-cybersafe.pdf folder-cybersafe.png _site/
           touch _site/.nojekyll
       - name: Enviar site estático
         uses: actions/upload-pages-artifact@v3
